@@ -12,10 +12,10 @@ br.addheaders = [('user-agent',
 def bilgi():
     print("""
 ###      ###  _____         _    ___     _     _   
-#	       o # |_   _|  _ _ _| |__/ _ \ __(_)_ _| |_ 
-	             | || || | '_| / / (_) (_-< | ' \  _|
+#	 o # |_   _|  _ _ _| |__/ _ \ __(_)_ _| |_ 
+	       | || || | '_| / / (_) (_-< | ' \  _|
                |_| \_,_|_| |_\_\ \__//__/_|_||_\__|
-#	         # Proje Adı: https://github.com/TurkOsint
+#	   # Proje Adı: https://github.com/TurkOsint
 ###      ### Kodlayan : https://github.com/EyupErgin
 """)
 
@@ -24,10 +24,10 @@ def bilgi():
 try:
     print("""
 ###      ###  _____         _    ___     _     _   
-#	       o # |_   _|  _ _ _| |__/ _ \ __(_)_ _| |_ 
-	             | || || | '_| / / (_) (_-< | ' \  _|
+#	 o # |_   _|  _ _ _| |__/ _ \ __(_)_ _| |_ 
+	       | || || | '_| / / (_) (_-< | ' \  _|
                |_| \_,_|_| |_\_\ \__//__/_|_||_\__|
-#	         # Proje Adı: https://github.com/TurkOsint
+#	   # Proje Adı: https://github.com/TurkOsint
 ###      ### Kodlayan : https://github.com/EyupErgin
 """)
 
