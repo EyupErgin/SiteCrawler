@@ -10,30 +10,18 @@ br.addheaders = [('user-agent',
                   'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.3) Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3')]
 
 def bilgi():
-    print("""
-###      ###  _____         _    ___     _     _   
-#	 o # |_   _|  _ _ _| |__/ _ \ __(_)_ _| |_ 
-	       | || || | '_| / / (_) (_-< | ' \  _|
-               |_| \_,_|_| |_\_\ \__//__/_|_||_\__|
-#	   # Proje Adı: https://github.com/TurkOsint
-###      ### Kodlayan : https://github.com/EyupErgin
-""")
-
-    print(Fore.WHITE+"[TurkOsint] Örnek Kullanım: python crawler.py google.com")
+    print(Fore.WHITE+"Example Usage: python3 crawler.py -s example.com ")
 
 try:
     print("""
-###      ###  _____         _    ___     _     _   
-#	 o # |_   _|  _ _ _| |__/ _ \ __(_)_ _| |_ 
-	       | || || | '_| / / (_) (_-< | ' \  _|
-               |_| \_,_|_| |_\_\ \__//__/_|_||_\__|
-#	   # Proje Adı: https://github.com/TurkOsint
-###      ### Kodlayan : https://github.com/EyupErgin
+Project Name : SiteCrawler
+Created : https://github.com/EyupErgin
+Github  : https://github.com/IntelSights/SiteCrawler/
 """)
 
-    dosya = open("sonuc.txt","w")
-    txt = open("sonuc.txt")
-    link = sys.argv[1]
+    dosya = open("export.txt","w")
+    txt = open("export.txt")
+    link = sys.argv[2]
     denetle = link.split(".")
 
     if re.findall(":",denetle[0]):
@@ -41,7 +29,7 @@ try:
         sys.exit()
 
     d_link = "http://"+link
-    print("[TurkOsint] Tarama Başladı >  "+link)
+    print("Scan Started >  "+link)
 
 
     br.open(d_link)
@@ -50,7 +38,7 @@ try:
             dosya.write(links.url+"\n")
         else:
             dosya.write(d_link+links.url+"\n")
-    print("[TurkOsint] Tamamlandı. Dosyaya Yazıldı. Açınız. >> sonuc.txt")
+    print("Completed. Written to File. Open it > export.txt")
     print("")
 except:
     bilgi()
