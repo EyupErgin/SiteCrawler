@@ -10,7 +10,7 @@ br.addheaders = [('user-agent',
                   'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.2.3) Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3')]
 
 def bilgi():
-    print(Fore.WHITE+"Example Usage: python3 crawler.py -s example.com ")
+    print(Fore.WHITE+"Example Usage: python3 SiteCrawler.py -s example.com ")
 
 try:
     print("""
